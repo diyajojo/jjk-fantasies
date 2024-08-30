@@ -5,18 +5,7 @@ class FeatureOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-         flexibleSpace: Container(
-    decoration: BoxDecoration(
-       color: Colors.white, // to remove the coour change on scrolling we fix a colour for appbar
-    ),
-  ),
-       title: Text("SORCERY SQUAD",
-       style: TextStyle(
-       fontFamily: 'Nerko One',
-       fontSize: 35.0,
-        fontWeight: FontWeight.bold,
-                  ),
-       ),
+        title: Text("Meet the Sorcerers"),
         centerTitle: true,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
@@ -25,7 +14,7 @@ class FeatureOne extends StatelessWidget {
           },
         ),
       ),
-      body: Container(
+     body: Container(
         color: Colors.pink.shade50,
         child: Padding(
           padding: EdgeInsets.all(20.0),
@@ -234,7 +223,6 @@ class FeatureOne extends StatelessWidget {
                   ],
                 ),
            ),
-            SizedBox(height: 20.0),
            Container(
                 child: Row(
                   children: [
@@ -370,7 +358,6 @@ class FeatureOne extends StatelessWidget {
                   ],
                 ),
               ),
-               SizedBox(height: 20.0),
               Container(
   child: Row(
     children: [
