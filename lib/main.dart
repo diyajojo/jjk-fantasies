@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'featurepg.dart';
 
 
 void main() {
@@ -16,21 +17,21 @@ class Homepage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Jujutsu Kaisen Hub",
+          "よって、ここに、",
           style: GoogleFonts.notoSansJp(
             fontSize: 24.0,
-            color: Colors.white,
+            color: Colors.black,
             ),
           
         ),
         centerTitle: true,
-        backgroundColor: Colors.black,
+        //backgroundColor: Colors.black,
         elevation: 0.0, // removes the shadow under appbar
       ),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/homepg.jpeg'),
+            image: AssetImage('assets/featurespg.jpeg'),
             fit: BoxFit.cover,
           ),
         ),
@@ -38,13 +39,13 @@ class Homepage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 50.0),
+              padding: EdgeInsets.only(top: 250.0),
               child: Text(
                 'Explore the World of Jujutsu Kaisen',
                 style: GoogleFonts.greatVibes(
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white,
+                   color: Colors.black,
                   letterSpacing: 2.0,
                 ),
                 textAlign: TextAlign.center
@@ -52,20 +53,25 @@ class Homepage extends StatelessWidget {
             ),
             SizedBox(height: 20.0), // adds space between two widgets vertically
             Container(
-  margin: EdgeInsets.only(left: 130.0,top:500.0),
+  margin: EdgeInsets.only(left: 100.0,top: 40.0),
   child: ElevatedButton(
     style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.redAccent, // changed button color for more contrast
+                backgroundColor: Colors.red.shade200, // changed button color for more contrast
                 padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0), // increased button size
               ),
     child: Text("Start Exploring"),
-    onPressed: () {},
-  ),
-),
-
+    onPressed: (){
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder:(context)=> FeaturesPage()),
+  );
+                },
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
+ 
