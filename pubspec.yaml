@@ -25,8 +25,20 @@ flutter:
     - assets/featurespg.jpeg
     - assets/geto.jpg
     - assets/yuji.jpeg 
+    - assets/kento.jpg
+    - assets/maki.jpeg
+    - assets/panda.jpeg
+    - assets/inumkai.jpg
+    - assets/toji.jpeg
+    - assets/megumi.jpeg
+    - assets/nobara.jpeg
+    - assets/ryumen.jpg
 
   fonts:
     - family: New Amsterdam
       fonts:
         - asset: fonts/NewAmsterdam-Regular.ttf
+    - family: Nerko One
+      fonts:
+        - asset: fonts/NerkoOne-Regular.ttf
+        
