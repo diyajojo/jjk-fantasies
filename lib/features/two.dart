@@ -30,7 +30,7 @@ class FeatureTwo extends StatelessWidget {
       body: Stack(
         children: [
           Image.asset(
-            'assets/featurespg.jpeg',
+            'assets/background/main.jpeg',
             fit: BoxFit.cover,
             height: double.infinity, // background to cover whole pg
             width: double.infinity, // background to cover whole pg

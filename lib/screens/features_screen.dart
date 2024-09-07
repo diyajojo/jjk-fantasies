@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'one.dart';
+import '../features/one.dart';
+import '../features/two.dart';
 
 class FeaturesPage extends StatelessWidget {
   @override
@@ -33,7 +34,9 @@ class FeaturesPage extends StatelessWidget {
                     fontFamily: 'New Amsterdam',
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
+                    color: Colors.purple.shade200,
                   ),
+                  
                 ),
                 
             onTap: () {
@@ -51,8 +54,15 @@ class FeaturesPage extends StatelessWidget {
                     fontFamily: 'New Amsterdam',
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
+                    color: Colors.purple.shade200,
                   ),
                 ),
+                 onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FeatureTwo()),
+              );
+            },
               ),
               ListTile(
                 title: Text(
@@ -61,6 +71,7 @@ class FeaturesPage extends StatelessWidget {
                     fontFamily: 'New Amsterdam',
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
+                    color: Colors.purple.shade200,
                   ),
                 ),
               ),
@@ -71,6 +82,7 @@ class FeaturesPage extends StatelessWidget {
                     fontFamily: 'New Amsterdam',
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
+                    color: Colors.purple.shade200,
                   ),
                 ),
               ),
@@ -81,6 +93,7 @@ class FeaturesPage extends StatelessWidget {
                     fontFamily: 'New Amsterdam',
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
+                    color: Colors.purple.shade200,
                   ),
                 ),
               ),

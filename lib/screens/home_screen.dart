@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'featurepg.dart';
+import 'features_screen.dart';
 
 
 void main() {
@@ -31,7 +31,7 @@ class Homepage extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/featurespg.jpeg'),
+            image: AssetImage('assets/background/main.jpeg'),
             fit: BoxFit.cover,
           ),
         ),

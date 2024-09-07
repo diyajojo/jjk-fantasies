@@ -7,7 +7,7 @@ class FeatureOne extends StatelessWidget {
       appBar: AppBar(
          flexibleSpace: Container(
     decoration: BoxDecoration(
-       color: Colors.white, // to remove the coour change on scrolling we fix a colour for appbar
+       color: Colors.white, // to remove the colour change on scrolling we fix a colour for appbar
     ),
   ),
        title: Text("SORCERY SQUAD",
@@ -36,7 +36,7 @@ class FeatureOne extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 30.0,
-                      backgroundImage: AssetImage('assets/gojo.webp'),
+                      backgroundImage: AssetImage('assets/characters/gojo.webp'),
                     ),
                      SizedBox(width: 10.0),
                     Expanded(
@@ -70,7 +70,75 @@ class FeatureOne extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 30.0,
-                      backgroundImage: AssetImage('assets/geto.jpg'),
+                      backgroundImage: AssetImage('assets/characters/ryumen.jpg'),
+                    ),
+                    SizedBox(width: 10.0),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Ryomen Sukuna',
+                            style: TextStyle(
+                              fontFamily: 'New Amsterdam',
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            'A powerful and mysterious sorcerer, Ryomen is known for his exceptional strength and agility.',
+                            style: TextStyle(
+                              fontFamily: 'New Amsterdam',
+                              fontSize: 16.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+               SizedBox(height: 20.0),
+                             Container(
+  child: Row(
+    children: [
+      CircleAvatar(
+        radius: 30.0,
+        backgroundImage: AssetImage('assets/characters/yuji.jpeg'),
+      ),
+      SizedBox(width: 10.0),
+      Expanded(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Yuji Itadori',
+              style: TextStyle(
+                fontFamily: 'New Amsterdam',
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              'A first-year student at Tokyo Jujutsu High School, Juji Itadori is a talented sorcerer with a unique cursed energy.',
+              style: TextStyle(
+                fontFamily: 'New Amsterdam',
+                fontSize: 16.0,
+              ),
+            ),
+          ],
+        ),
+      ),
+    ],
+  ),
+),
+SizedBox(height: 20.0),
+              Container(
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 30.0,
+                      backgroundImage: AssetImage('assets/characters/geto.jpg'),
                     ),
                     SizedBox(width: 10.0),
                     Expanded(
@@ -104,7 +172,7 @@ class FeatureOne extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 30.0,
-                  backgroundImage: AssetImage('assets/kento.jpg'),
+                  backgroundImage: AssetImage('assets/characters/kento.jpg'),
                 ),
                 SizedBox(width: 10.0),
                 Expanded(
@@ -138,7 +206,7 @@ class FeatureOne extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 30.0,
-                  backgroundImage: AssetImage('assets/maki.jpeg'),
+                  backgroundImage: AssetImage('assets/characters/maki.jpeg'),
                 ),
                 SizedBox(width: 10.0),
                 Expanded(
@@ -172,7 +240,7 @@ class FeatureOne extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 30.0,
-                  backgroundImage: AssetImage('assets/panda.jpeg'),
+                  backgroundImage: AssetImage('assets/characters/panda.jpeg'),
                 ),
                 SizedBox(width: 10.0),
                 Expanded(
@@ -206,7 +274,7 @@ class FeatureOne extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 30.0,
-                      backgroundImage: AssetImage('assets/nobara.jpeg'),
+                      backgroundImage: AssetImage('assets/characters/nobara.jpeg'),
                     ),
                     SizedBox(width: 10.0),
                     Expanded(
@@ -240,7 +308,7 @@ class FeatureOne extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 30.0,
-                      backgroundImage: AssetImage('assets/megumi.jpeg'),
+                      backgroundImage: AssetImage('assets/characters/megumi.jpeg'),
                     ),
                     SizedBox(width: 10.0),
                     Expanded(
@@ -268,47 +336,14 @@ class FeatureOne extends StatelessWidget {
                   ],
                 ),
               ),
+        
               SizedBox(height: 20.0),
               Container(
                 child: Row(
                   children: [
                     CircleAvatar(
                       radius: 30.0,
-                      backgroundImage: AssetImage('assets/ryumen.jpg'),
-                    ),
-                    SizedBox(width: 10.0),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Ryomen Sukuna',
-                            style: TextStyle(
-                              fontFamily: 'New Amsterdam',
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            'A powerful and mysterious sorcerer, Ryomen is known for his exceptional strength and agility.',
-                            style: TextStyle(
-                              fontFamily: 'New Amsterdam',
-                              fontSize: 16.0,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 20.0),
-              Container(
-                child: Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 30.0,
-                      backgroundImage: AssetImage('assets/toji.jpeg'),
+                      backgroundImage: AssetImage('assets/characters/toji.jpeg'),
                     ),
                     SizedBox(width: 10.0),
                     Expanded(
@@ -342,7 +377,7 @@ class FeatureOne extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 30.0,
-                      backgroundImage: AssetImage('assets/inumkai.jpg'),
+                      backgroundImage: AssetImage('assets/characters/inumkai.jpg'),
                     ),
                     SizedBox(width: 10.0),
                     Expanded(
@@ -370,40 +405,7 @@ class FeatureOne extends StatelessWidget {
                   ],
                 ),
               ),
-               SizedBox(height: 20.0),
-              Container(
-  child: Row(
-    children: [
-      CircleAvatar(
-        radius: 30.0,
-        backgroundImage: AssetImage('assets/yuji.jpeg'),
-      ),
-      SizedBox(width: 10.0),
-      Expanded(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Yuji Itadori',
-              style: TextStyle(
-                fontFamily: 'New Amsterdam',
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            Text(
-              'A first-year student at Tokyo Jujutsu High School, Juji Itadori is a talented sorcerer with a unique cursed energy.',
-              style: TextStyle(
-                fontFamily: 'New Amsterdam',
-                fontSize: 16.0,
-              ),
-            ),
-          ],
-        ),
-      ),
-    ],
-  ),
-),
+      
             ],
           ),
         ),
