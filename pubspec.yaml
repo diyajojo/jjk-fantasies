@@ -20,19 +20,32 @@ dev_dependencies:
 
 flutter:
   assets:
-    - assets/gojo.webp
-    - assets/homepg.jpeg
-    - assets/featurespg.jpeg
-    - assets/geto.jpg
-    - assets/yuji.jpeg 
-    - assets/kento.jpg
-    - assets/maki.jpeg
-    - assets/panda.jpeg
-    - assets/inumkai.jpg
-    - assets/toji.jpeg
-    - assets/megumi.jpeg
-    - assets/nobara.jpeg
-    - assets/ryumen.jpg
+    - assets/characters/gojo.webp
+    - assets/background/main.jpeg
+    - assets/characters/geto.jpg
+    - assets/characters/yuji.jpeg 
+    - assets/characters/kento.jpg
+    - assets/characters/maki.jpeg
+    - assets/characters/panda.jpeg
+    - assets/characters/inumkai.jpg
+    - assets/characters/toji.jpeg
+    - assets/characters/megumi.jpeg
+    - assets/characters/nobara.jpeg
+    - assets/characters/ryumen.jpg
+    - assets/sayings/one.avif
+    - assets/sayings/two.avif
+    - assets/sayings/three.avif
+    - assets/sayings/four.avif
+    - assets/sayings/five.avif
+    - assets/sayings/six.avif
+    - assets/sayings/seven.avif
+    - assets/sayings/nine.avif
+    - assets/sayings/fourteen.avif
+   
+
+
+
+
 
   fonts:
     - family: New Amsterdam
@@ -41,4 +54,7 @@ flutter:
     - family: Nerko One
       fonts:
         - asset: fonts/NerkoOne-Regular.ttf
+    - family: Parisienne
+      fonts:
+        - asset: fonts/Parisienne-Regular.ttf
         
