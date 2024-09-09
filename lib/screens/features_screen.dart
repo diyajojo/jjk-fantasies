@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../features/one.dart';
 import '../features/two.dart';
+import '../features/three.dart';
 
 class FeaturesPage extends StatelessWidget {
   @override
@@ -19,7 +20,7 @@ class FeaturesPage extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/featurespg.jpeg'),
+            image: AssetImage('assets/background/main.jpeg'),
             fit: BoxFit.cover,
           ),
         ),
@@ -74,28 +75,12 @@ class FeaturesPage extends StatelessWidget {
                     color: Colors.purple.shade200,
                   ),
                 ),
-              ),
-              ListTile(
-                title: Text(
-                  "Kaisen Konfidential",
-                  style: TextStyle(
-                    fontFamily: 'New Amsterdam',
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.purple.shade200,
-                  ),
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  "Jujutsu Journal",
-                  style: TextStyle(
-                    fontFamily: 'New Amsterdam',
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.purple.shade200,
-                  ),
-                ),
+                 onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FeatureThree()),
+              );
+            },
               ),
             ],
           ),
